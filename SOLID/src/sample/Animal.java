@@ -18,4 +18,13 @@ public abstract class Animal {
     public String getColor() {
         return _color;
     }
+
+    public void setColor(String color)
+    {
+        _color = color;
+    }
+
+    public void walk(){
+        System.out.println("Walking!");
+    }
 }
