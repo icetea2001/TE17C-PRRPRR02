@@ -7,15 +7,15 @@ public class Snake extends Animal {
     }
 
     void speak() {
-        System.out.println("Dog is barking!");
+        System.out.println("Snaek is barking!");
     }
 
     void sleep() {
-        System.out.println("Dog is sleeping!");
+        System.out.println("Snaek is sleeping!");
     }
 
     void eat() {
-        System.out.println("Dog is eating.");
+        System.out.println("Snaek is eating.");
     }
 
     @Override
