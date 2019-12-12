@@ -19,6 +19,8 @@ public class Main   {
     }
 
     private static void activateAnimal(Animal animal) {
+        System.out.println();
+
         animal.eat();
         animal.sleep();
         animal.speak();
