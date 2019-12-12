@@ -7,21 +7,47 @@ public class Main   {
 
         Animal[] animals = {new Dog("Black"),
                             new Hedgehog("Pink"),
-                            new Bird("Yellow")};
+                            new Bird("Yellow"),
+                            new Snake("Black and Yellow")};
 
         System.out.println("###############");
         System.out.println();
 
         for (Animal animal : animals) {
-            animal.eat();
-            animal.sleep();
-            animal.speak();
-            animal.setColor("Grey");
-            System.out.println(animal.getClass().getSimpleName() + " is " + animal.getColor());
-            System.out.println();
+            activateAnimal(animal);
+        }
+    }
 
-            System.out.println("###############");
-            System.out.println();
+    private static void activateAnimal(Animal animal) {
+        animal.eat();
+        animal.sleep();
+        animal.speak();
+        animal.walk();
+
+        printAnimalName(animal);
+
+        System.out.println("###############");
+        System.out.println();
+    }
+
+    private static void printAnimalName(Animal animal) {
+        switch (animal.getClass().getSimpleName())
+        {
+            case "Dog":
+                System.out.println("Its a dog!");
+                break;
+            case "Bird":
+                System.out.println("Its some kind of Bird!");
+                break;
+            case "Hedgehog":
+                System.out.println("Sonic?");
+                break;
+            case "Snake":
+                System.out.println("Oh heck its a Snaek!");
+                break;
+            default:
+                System.out.println("ANIMAL!");
+                break;
         }
     }
 }

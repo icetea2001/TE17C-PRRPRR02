@@ -17,14 +17,4 @@ public class Hedgehog extends Animal {
     void eat() {
         System.out.println("Hedgehog is omnomnoming!");
     }
-
-    @Override
-    public void setColor(String color) {
-        if(color == "Blue")
-        {
-            System.out.println("It's SONIC!");
-        }
-
-        super._color = color;
-    }
 }
